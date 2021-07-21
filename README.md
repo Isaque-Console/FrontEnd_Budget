@@ -7,9 +7,9 @@ também, a opção de remover alguma transação. Os dados serão armazenados no
 sendo assim, ao dar um refresh na página, os dados permanecerão salvos.
 
 ## Languages used:
-HTML (De marcação)
-CSS (De design gráfico)
-JavaScript (De programação)
+- HTML (De marcação)
+- CSS (De design gráfico)
+- JavaScript (De programação)
 
 ## Credits:
 O professor Mayk Brito ensinou passo a passo como construir essa aplicação, então assisti suas
