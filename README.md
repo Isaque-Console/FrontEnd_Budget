@@ -4,7 +4,7 @@
 realizadas, informando a descrição da transação, o valor dela e a sua data. O programa irá
 calcular a soma de todo o dinheiro que entrou no orçamento e de todo o dinheiro que saiu do
 mesmo, tendo, também, a opção de remover alguma transação. Os dados serão armazenados no Local
-Storage, sendo assim, ao dar um refresh na página, os dados permanecerão salvos.
+Storage, sendo assim, ao dar um refresh na página, os dados permanecerão guardados.
 
 ## Languages used:
 - HTML (De marcação)
