@@ -11,8 +11,8 @@ mesmo, tendo, também, a opção de remover alguma transação. Os dados serão 
 - JavaScript (De programação)
 
 ## Credits:
-- O professor Mayk Brito ensinou como construir essa aplicação, então assisti
-suas aulas, copiando o código e buscando entender o processo de construção, depois fiz as modificações necessárias para que o frontend se comunique com o backend.
-- As aulas foram disponiblizadas em um curso gratuito da rocketseat, chamado de 'Maratona
+- O professor Mayk Brito deu aula no curso do Discover, ensinando como construir a maior parte dessa aplicação. Então, assisti
+suas aulas, copiando o código e buscando entender o processo de construção. Depois, fiz as modificações necessárias para que o frontend se comunique com o backend, além de acrescentar a função de editar uma transação.
+- As aulas do Discover foram disponiblizadas em um curso gratuito da rocketseat, chamado de 'Maratona
 Discover edição 01', sendo ministradas pelo professor Mayk Brito, o qual atuou de forma
 excelente na sua função.
