@@ -7,19 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dev.finance$</title>
     <!-- MY FILE CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../public/styles/style.css">
 
     <!-- FONTES DO GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
-
+    <!-- API DO AXIOS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
 
     <header>
-        <img src="assets/logo.svg" alt="Logo Dev Finance">
+        <img src="../../public/assets/logo.svg" alt="Logo Dev Finance">
     </header>
 
     <main class="container">
@@ -28,21 +29,21 @@
             <div class="card">
                 <h3>
                     <span>Entradas</span>
-                    <img src="assets/income.svg" alt="Imagem de entradas">
+                    <img src="../../public/assets/income.svg" alt="Imagem de entradas">
                 </h3>
                 <p id="incomeDisplay">R$ 0,00</p>
             </div>
             <div class="card">
                 <h3>
                     <span>Saídas</span>
-                    <img src="assets/expense.svg" alt="Imagem de saídas">
+                    <img src="../../public/assets/expense.svg" alt="Imagem de saídas">
                 </h3>
                 <p id="expenseDisplay">R$ 0,00</p>
             </div>
             <div class="card total">
                 <h3>
                     <span>Total</span>
-                    <img src="assets/total.svg" alt="Imagem de total">
+                    <img src="../../public/assets/total.svg" alt="Imagem de total">
                 </h3>
                 <p id="totalDisplay">R$ 0,00</p>
             </div>
@@ -61,6 +62,7 @@
                         <th>Valor</th>
                         <th>Data</th>
                         <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -73,7 +75,7 @@
         <div class="modal">
             <div id="form">
                 <h2>Nova Transação</h2>
-                <form action="" onsubmit="Form.submit(event)" >
+                <form id="transaction-form" method="POST" onsubmit="Form.submit(event)">
                     <div class="input-group">
                         <label 
                             class="sr-only" 
@@ -117,7 +119,16 @@
                         onclick="Modal.close()"
                         href="#" 
                         class="button cancel">Cancelar</a>
-                        <button>Salvar</button>
+                        <button type="submit" form="transaction-form">Salvar</button>
+                    </div>
+
+                    <div class="input-group edit">
+                        <a 
+                        onclick="Modal.close()"
+                        href="#"
+                        class="button cancel">Cancelar</a>
+                        
+                        <button type="button" onclick="Form.edit()" form="transaction-form">Editar</button>
                     </div>
 
                 </form>
@@ -126,7 +137,7 @@
     </div>
     
     <!-- MY FILE JS -->
-    <script src="scripts.js"></script>
+    <script src="../../public/scripts/scripts.js"></script>
 
 
     <footer>

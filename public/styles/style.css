@@ -280,6 +280,29 @@ input {
     align-items: center;
 }
 
+.input-group.actions.deactivate {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.input-group.edit {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.input-group.edit.active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1.0;
+    visibility: visible;
+}
+
+.input-group.edit .button,
+.input-group.edit button {
+    width: 48%;
+}
+
 .input-group.actions .button,
 .input-group.actions button {
     width: 48%;
